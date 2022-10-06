@@ -58,13 +58,34 @@ function Content() {
             <h2 className="portfolio__title">Portfolio</h2>
             <div className="portfolio">
                 <div className="portfolio__item neirika">
-                    <img src={imgNeirika} alt="Project" className="portfolio__img"></img>
+                    <a href="https://nikidan.github.io/Neirika/index.html"
+                       target="_blank"
+                       className="portfolio__card-link"
+                    >
+                        <div className="img-container">
+                        <img src={imgNeirika} alt="Project" className="portfolio__img"></img>
+                        </div>
+                    </a>
                 </div>
                 <div className="portfolio__item square">
-                    <img src={imgSquare} alt="Project" className="portfolio__img"></img>
+                    <a href="https://nikidan.github.io/CvetOzera/index.html"
+                       target="_blank"
+                       className="portfolio__card"
+                    >
+                        <div className="img-container">
+                        <img src={imgSquare} alt="Project" className="portfolio__img"></img>
+                        </div>
+                    </a>
                 </div>
                 <div className="portfolio__item todo">
-                    <img src={imgTodo} alt="Project" className="portfolio__img"></img>
+                    <a href="https://heartfelt-bunny-71754e.netlify.app/"
+                       target="_blank"
+                       className="portfolio__card-link"
+                    >
+                        <div className="img-container">
+                        <img src={imgTodo} alt="Project" className="portfolio__img"></img>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
