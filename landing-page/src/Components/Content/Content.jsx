@@ -8,6 +8,9 @@ import imgReact from '../img/icons8-react.svg';
 import imgHTML from '../img/icons8-html-5.svg';
 import imgCSS from '../img/icons8-css3.svg';
 import imgJS from '../img/icons8-javascript.svg';
+import imgNeirika from '../img/Neirika.png';
+import imgSquare from '../img/Square.png';
+import imgTodo from '../img/Todo.png';
 
 function Content() {
     return(
@@ -54,9 +57,14 @@ function Content() {
             </div>
             <h2 className="portfolio__title">Portfolio</h2>
             <div className="portfolio">
-                <div className="portfolio__item box-1">
+                <div className="portfolio__item neirika">
+                    <img src={imgNeirika} alt="Project" className="portfolio__img"></img>
                 </div>
-                <div className="portfolio__item box-2">
+                <div className="portfolio__item square">
+                    <img src={imgSquare} alt="Project" className="portfolio__img"></img>
+                </div>
+                <div className="portfolio__item todo">
+                    <img src={imgTodo} alt="Project" className="portfolio__img"></img>
                 </div>
             </div>
         </div>
