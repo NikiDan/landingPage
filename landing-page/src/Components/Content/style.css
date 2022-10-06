@@ -1,4 +1,5 @@
 .content{
+    width: 50%;
     background-color: #1e1e1f;
     border: 1px solid #383838;
     border-radius: 20px;
@@ -96,4 +97,8 @@
 
 .react-text{
     font-weight: 800;
+}
+
+.portfolio__title{
+    margin-top: 0;
 }

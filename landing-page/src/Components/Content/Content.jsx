@@ -52,6 +52,13 @@ function Content() {
                     </div>
                 </div>
             </div>
+            <h2 className="portfolio__title">Portfolio</h2>
+            <div className="portfolio">
+                <div className="portfolio__item box-1">
+                </div>
+                <div className="portfolio__item box-2">
+                </div>
+            </div>
         </div>
     );
 }

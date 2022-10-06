@@ -1,6 +1,6 @@
 import './style.css';
 
-import imgDed from '../img/ded.png';
+import imgNik from '../img/ded.png';
 import imgInsta from '../img/icons8-instagram.svg';
 import imgLinkedIn from '../img/icons8-linkendin.svg';
 import imgGit from '../img/icons8-github.svg';
@@ -17,7 +17,7 @@ function InfBlock() {
         <div className="inf">
             <div className="title-inf">
                 <figure className="avatar-box">
-                    <img src={imgDed} alt="Nikita Danilov" className="img"/>
+                    <img src={imgNik} alt="Nikita Danilov" className="img"/>
                 </figure>
                 <div className="title-text">
                     <h3 className="title-name">Danilov Nikita</h3>
