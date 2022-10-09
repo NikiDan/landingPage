@@ -1,6 +1,6 @@
 import './style.css';
 
-import imgNik from '../img/ded.png';
+import imgNik from '../img/beautiful2.jpg';
 import imgInsta from '../img/icons8-instagram.svg';
 import imgLinkedIn from '../img/icons8-linkendin.svg';
 import imgGit from '../img/icons8-github.svg';

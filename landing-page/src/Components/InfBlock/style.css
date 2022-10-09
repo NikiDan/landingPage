@@ -21,7 +21,6 @@
 
 .avatar-box{
     background: linear-gradient(137.84deg, #3F3F40 2.69%, #303030 93.75%);
-    margin: 30px;
     overflow: hidden;
     height: calc(100% - 3.75rem);
     width: calc(100% - 3.75rem);
