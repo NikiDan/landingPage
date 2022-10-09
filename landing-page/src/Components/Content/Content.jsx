@@ -88,6 +88,12 @@ function Content() {
                     </a>
                 </div>
             </div>
+            <p className="works">More my works uou can find
+                <a className="works__link"
+                target="_blank"
+                href="https://nikidan.github.io/"> here </a>
+                !
+            </p>
         </div>
     );
 }
