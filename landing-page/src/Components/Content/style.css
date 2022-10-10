@@ -56,7 +56,7 @@
 
 .prof-skill__inf__item{
     flex: 0 0 auto;
-    width: 40%;
+    width: 41.5%;
     display: flex;
     justify-content: center;
     height: calc(100% - 1.25rem);
@@ -101,6 +101,14 @@
     flex-direction: row;
 }
 
+.portfolio__item{
+    width: 34%;
+}
+
+.neirika, .square{
+    margin-right: 20px;
+}
+
 .portfolio__title{
     margin-top: 0;
 }
@@ -115,10 +123,10 @@
 }
 
 .img-container{
-    margin-right: 20px;
     background: #000000;
     overflow: hidden;
     border-radius: 8px;
+    z-index: 1;
 }
 
 .portfolio__img:hover{
@@ -126,8 +134,17 @@
     transform: scale(1.1);
 }
 
+.footer-text{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    justify-content: center;
+}
+
 .works{
-    margin: 35px 0 0 0;
+    margin: 0;
     font-size: 20px;
     font-weight: 600;
 }
@@ -140,4 +157,30 @@
 
 .works__link:hover{
     color: #ffdb6e;
+}
+
+@media screen and ( max-width: 1670px){
+    .prof-skill__inf__item{
+        width: 39%;
+    }
+
+    .portfolio__img{
+        width: 100%;
+        height: 120px;
+    }
+
+    .footer-text{
+        height: 12%;
+    }
+}
+
+@media screen and ( max-width: 1477px){
+    .prof-skill__inf__item{
+        width: 37%;
+    }
+
+    .portfolio__img{
+        width: 100%;
+        height: 120px;
+    }
 }

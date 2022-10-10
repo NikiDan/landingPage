@@ -25,8 +25,6 @@ function Content() {
                     <li className="nav__item">
                         <a className="active" href="#">Portfolio</a>
                     </li>
-                    <li className="nav__item"><a className="active" href="#">Contact</a>
-                    </li>
                 </ul>
             </div>
             <div className="description">
@@ -38,19 +36,19 @@ function Content() {
             <div className="prof-skills">
                 <div className="prof-skill__inf">
                     <div className="prof-skill__inf__item box-1">
-                        <img src={imgHTML} alt="HTML" className="box__icon"></img>
+                        <img src={imgHTML} alt="HTML" className="box__icon"/>
                         <HtmlOutlinedIcon className="content-icon box__icon"/>
                     </div>
                     <div className="prof-skill__inf__item box-2">
-                        <img src={imgCSS} alt="CSS" className="box__icon"></img>
+                        <img src={imgCSS} alt="CSS" className="box__icon"/>
                         <CssOutlinedIcon className="content-icon box__icon"/>
                     </div>
                     <div className="prof-skill__inf__item box-3">
-                        <img src={imgJS} alt="JavaScript" className="box__icon"></img>
+                        <img src={imgJS} alt="JavaScript" className="box__icon"/>
                         <JavascriptOutlinedIcon className="content-icon box__icon"/>
                     </div>
                     <div className="prof-skill__inf__item box-4">
-                        <img src={imgReact} alt="React" className="box__icon"></img>
+                        <img src={imgReact} alt="React" className="box__icon"/>
                         <p className="box__text react-text">react</p>
                     </div>
                 </div>
@@ -63,7 +61,7 @@ function Content() {
                        className="portfolio__card-link"
                     >
                         <div className="img-container">
-                        <img src={imgNeirika} alt="Project" className="portfolio__img"></img>
+                            <img src={imgNeirika} alt="Project" className="portfolio__img"/>
                         </div>
                     </a>
                 </div>
@@ -73,7 +71,7 @@ function Content() {
                        className="portfolio__card"
                     >
                         <div className="img-container">
-                        <img src={imgSquare} alt="Project" className="portfolio__img"></img>
+                            <img src={imgSquare} alt="Project" className="portfolio__img"/>
                         </div>
                     </a>
                 </div>
@@ -83,17 +81,18 @@ function Content() {
                        className="portfolio__card-link"
                     >
                         <div className="img-container">
-                        <img src={imgTodo} alt="Project" className="portfolio__img"></img>
+                            <img src={imgTodo} alt="Project" className="portfolio__img"/>
                         </div>
                     </a>
                 </div>
             </div>
+            <div className="footer-text">
             <p className="works">More my works uou can find
                 <a className="works__link"
                 target="_blank"
                 href="https://nikidan.github.io/"> here </a>
-                !
             </p>
+            </div>
         </div>
     );
 }
