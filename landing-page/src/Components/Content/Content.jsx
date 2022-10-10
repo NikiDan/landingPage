@@ -29,10 +29,10 @@ function Content() {
             </div>
             <div className="description">
                 <h1 className="description__title">About Me</h1>
-                <p className="description__inf">I'm Front-end Developer from Hrodna, Belarus, working in web development.</p>
-                <p>My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way</p>
+                <p className="description__inf">I'm a Front-end Developer from Grodno, Belarus and I work in web development.</p>
+                <p>My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that it is eye-catching and easy to use. My goal is use the most creative way to develop your web-site.</p>
             </div>
-            <h2 className="prof-skills__title">What I'm Doing</h2>
+            <h2 className="prof-skills__title">What I do</h2>
             <div className="prof-skills">
                 <div className="prof-skill__inf">
                     <div className="prof-skill__inf__item box-1">
@@ -87,7 +87,7 @@ function Content() {
                 </div>
             </div>
             <div className="footer-text">
-            <p className="works">More my works uou can find
+            <p className="works">More projects can be found
                 <a className="works__link"
                 target="_blank"
                 href="https://nikidan.github.io/"> here </a>

@@ -57,8 +57,8 @@ function InfBlock() {
                                 <div className="li__inf">
                                     <span className="overhead">Location</span>
                                     <span className="email-link text-overflow"
-                                          title="Hrodna, Belarus"
-                                    >Hrodna, Belarus</span>
+                                          title="Grodno, Belarus"
+                                    >Grodno, Belarus</span>
                                 </div>
                             </li>
                         </ul>
