@@ -12,7 +12,8 @@ import imgNeirika from '../img/Neirika.png';
 import imgSquare from '../img/Square.png';
 import imgTodo from '../img/Todo.png';
 
-function Content() {
+function Content( mobile, useMobile) {
+
     return(
         <div className="content">
             <div className="nav-container">
