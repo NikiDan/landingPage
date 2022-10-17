@@ -18,10 +18,11 @@ import imgTodo from '../img/Todo.png';
 function Content() {
 
     const dispatch = useDispatch();
-    const mobile = useSelector(state => state.mobile);
-    console.log(mobile)
+    const clientWindow = useSelector(state => state.clientWindow);
+    // console.log(pc)
 
     return(
+        { clientWindow >= 1262?
         <div className="content">
             <div className="nav-container">
                 <ul className="nav">
@@ -102,6 +103,11 @@ function Content() {
             </p>
             </div>
         </div>
+            :
+            <div>
+                Всё хорошо !
+            </div>
+        }
     );
 }
 

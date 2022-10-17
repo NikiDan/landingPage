@@ -1,14 +1,12 @@
 const defaultState = {
-    pc: null,
-    mobile: null,
+    clientWindow: document.documentElement.clientWidth,
+    mobile: 1261,
 }
 
 export const reducer = (state = defaultState, action) => {
     switch(action.type){
-        case "pc":
-            return { ...state, pc: state.pc + action.payload }
-        case "mobile":
-            return { ...state, mobile: state.mobile +action.payload }
+        case "clientWindow":
+            return { ...state, clientWindow: state.clientWindow }
 
         default:
             return state
