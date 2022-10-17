@@ -1,39 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
+import {Provider} from "react-redux";
+import {store} from "../store";
 
 import InfBlock from "../InfBlock";
 import Content from "../Content";
 
 import './style.css';
 
-import { createStore } from "redux";
-
-const defaultState = {
-    pc: true,
-    mobile: false,
-}
-
-const reducer = (state = defaultState, action) => {
-    switch(action.type){
-        case "pc":
-            return { ...state, pc: state.pc + action.payload }
-        case "mobile":
-            return { ...state, mobile: state.mobile +action.payload }
-
-        default:
-            return state
-    }
-}
-
-const store = createStore(reducer)
 
 function App() {
 
-    const [mobile, useMobile] = useState("");
-
   return (
     <div className="App">
-      <InfBlock/>
-      <Content mobile={mobile} useMobile={useMobile}/>
+        <Provider store={store}>
+            <InfBlock/>
+            <Content/>
+        </Provider>
     </div>
   );
 }

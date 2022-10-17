@@ -1,5 +1,7 @@
 import './style.css';
 
+import {useDispatch, useSelector} from "react-redux";
+
 import HtmlOutlinedIcon from '@mui/icons-material/HtmlOutlined';
 import CssOutlinedIcon from '@mui/icons-material/CssOutlined';
 import JavascriptOutlinedIcon from '@mui/icons-material/JavascriptOutlined';
@@ -12,7 +14,12 @@ import imgNeirika from '../img/Neirika.png';
 import imgSquare from '../img/Square.png';
 import imgTodo from '../img/Todo.png';
 
-function Content( mobile, useMobile) {
+
+function Content() {
+
+    const dispatch = useDispatch();
+    const mobile = useSelector(state => state.mobile);
+    console.log(mobile)
 
     return(
         <div className="content">
