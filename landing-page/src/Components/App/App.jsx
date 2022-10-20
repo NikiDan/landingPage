@@ -15,9 +15,9 @@ const defaultState = {
 const reducer = (state = defaultState, action) => {
     switch(action.type){
         case "pc":
-            return { ...state, pc: state.pc + action.payload }
+            return { ...state, pc: state.pc }
         case "mobile":
-            return { ...state, mobile: state.mobile +action.payload }
+            return { ...state, mobile: state.mobile }
 
         default:
             return state

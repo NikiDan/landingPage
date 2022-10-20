@@ -11,11 +11,17 @@ import imgJS from '../img/icons8-javascript.svg';
 import imgNeirika from '../img/Neirika.png';
 import imgSquare from '../img/Square.png';
 import imgTodo from '../img/Todo.png';
+import {useDispatch} from "react-redux";
 
-function Content( mobile, useMobile) {
+const Content = ({ mobile, useMobile }) => {
+
+     const pcMinWidth = 1262;
+     const pcWidth = window.innerWidth;
+    const dispatch = useDispatch();
 
     return(
         <div className="content">
+            { pcWidth >= pcMinWidth ? console.log("It's a pc") : console.log("It's a phone") }
             <div className="nav-container">
                 <ul className="nav">
                     <li className="nav__item">
