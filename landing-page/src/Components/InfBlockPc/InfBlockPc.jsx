@@ -10,7 +10,7 @@ import PhoneAndroidOutlinedIcon from '@mui/icons-material/PhoneAndroidOutlined';
 import CakeOutlinedIcon from '@mui/icons-material/CakeOutlined';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 
-function InfBlock() {
+const InfBlockPc = () => {
     return(
         <div className="inf">
             <div className="title-inf">
@@ -79,4 +79,4 @@ function InfBlock() {
     );
 }
 
-export default InfBlock;
+export default InfBlockPc;

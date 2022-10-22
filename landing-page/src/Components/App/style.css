@@ -1,5 +1,12 @@
-.App{
+.pcVersion{
     display: flex;
     justify-content: center;
+    padding: 30px;
+}
+
+.mobileVersion{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding: 30px;
 }

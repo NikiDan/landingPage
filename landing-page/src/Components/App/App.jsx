@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 
-import InfBlock from "../InfBlock";
+import InfBlockPc from "../InfBlockPc";
+import InfBlockMobile from "../InfBlockMobile";
 import Content from "../Content";
 
 import './style.css';
 
 import { createStore } from "redux";
 
+const pcMinWidth = 1262;
+const pcWidth = window.innerWidth;
+
 const defaultState = {
     pc: true,
-    mobile: false,
+    mobile: false
 }
 
 const reducer = (state = defaultState, action) => {
@@ -26,14 +30,21 @@ const reducer = (state = defaultState, action) => {
 
 const store = createStore(reducer)
 
-function App() {
-
-    const [mobile, useMobile] = useState("");
+const App = () => {
 
   return (
     <div className="App">
-      <InfBlock/>
-      <Content mobile={mobile} useMobile={useMobile}/>
+        { pcWidth >= pcMinWidth ?
+            <div className="pcVersion">
+                <InfBlockPc/>
+                <Content/>
+            </div>
+            :
+            <div className="mobileVersion">
+                <InfBlockMobile/>
+                <Content/>
+            </div>
+        }
     </div>
   );
 }
