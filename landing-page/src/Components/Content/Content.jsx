@@ -11,9 +11,8 @@ import imgJS from '../img/icons8-javascript.svg';
 import imgNeirika from '../img/Neirika.png';
 import imgSquare from '../img/Square.png';
 import imgTodo from '../img/Todo.png';
-import {useDispatch} from "react-redux";
 
-const Content = () => {
+function Content( mobile, useMobile) {
 
     return(
         <div className="content">
