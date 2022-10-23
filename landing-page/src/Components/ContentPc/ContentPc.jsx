@@ -12,7 +12,7 @@ import imgNeirika from '../img/Neirika.png';
 import imgSquare from '../img/Square.png';
 import imgTodo from '../img/Todo.png';
 
-function Content( mobile, useMobile) {
+const ContentPc = () => {
 
     return(
         <div className="content">
@@ -98,4 +98,4 @@ function Content( mobile, useMobile) {
     );
 }
 
-export default Content;
+export default ContentPc;

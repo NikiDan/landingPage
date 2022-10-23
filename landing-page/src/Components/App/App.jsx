@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-
 import InfBlockPc from "../InfBlockPc";
 import InfBlockMobile from "../InfBlockMobile";
-import Content from "../Content";
+import ContentPc from "../ContentPc";
+import ContentMobile from "../ContentMobile";
 
 import './style.css';
 
@@ -37,12 +36,12 @@ const App = () => {
         { pcWidth >= pcMinWidth ?
             <div className="pcVersion">
                 <InfBlockPc/>
-                <Content/>
+                <ContentPc/>
             </div>
             :
             <div className="mobileVersion">
                 <InfBlockMobile/>
-                <Content/>
+                <ContentMobile/>
             </div>
         }
     </div>
