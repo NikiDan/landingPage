@@ -10,18 +10,27 @@ import PhoneAndroidOutlinedIcon from '@mui/icons-material/PhoneAndroidOutlined';
 import CakeOutlinedIcon from '@mui/icons-material/CakeOutlined';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 
-import 'animate.css';
-
 const InfBlockMobile = () => {
 
     const showContacts = () =>{
 
         const invisInf = document.getElementById('invisible-inf');
+        const btnTitle = document.getElementById('btnTitle');
 
-        if (invisInf.style.display === "none"){
+        if (invisInf.className === "invisible-inf__hidden"){
+
             invisInf.style.display = "block";
+
+            invisInf.classList.remove('invisible-inf__hidden');
+            invisInf.classList.add('invisible-inf__active');
+
+            btnTitle.innerHTML="Hide Contacts";
+
         }else{
-            invisInf.style.display = "none";
+            invisInf.classList.remove('invisible-inf__active');
+            invisInf.classList.add('invisible-inf__hidden');
+
+            btnTitle.innerHTML="Show Contacts";
         }
 
     }
@@ -37,9 +46,11 @@ const InfBlockMobile = () => {
                             <h3 className="title-name">Danilov Nikita</h3>
                             <span className="badge">Front-end Developer</span>
                         </div>
-                        <button className="show-btn" type="submit" onClick={showContacts}>Show Contacts</button>
+                        <button className="show-btn" type="submit" onClick={showContacts}>
+                            <span id='btnTitle'>Show Contacts</span>
+                        </button>
                     </div>
-                    <div className="invisible-inf" id="invisible-inf" style={{display: "none"}}>
+                    <div className="invisible-inf__hidden" id="invisible-inf" style={{display: "none"}}>
                         <div className="separation"/>
                         <div className="detail-inf">
                             <ul className="list-inf">
@@ -63,7 +74,7 @@ const InfBlockMobile = () => {
                                     </div>
                                 </li>
                             </ul>
-                            <ul className="list-inf">
+                            <ul className="list-inf ul-2">
                                 <li className="detail-inf__item">
                                     <span className="li__icon"><CakeOutlinedIcon/></span>
                                     <div className="li__inf">
