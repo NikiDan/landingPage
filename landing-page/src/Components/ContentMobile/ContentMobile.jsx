@@ -28,6 +28,7 @@ const ContentMobile = () => {
             invisNav.classList.add('nav__hidden');
 
             btnNav.style.transform = "rotate(360deg)";
+
             invisContainer.style.padding = "0 10px";
 
         }

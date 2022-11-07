@@ -20,8 +20,8 @@
     padding-right: 1rem;
     padding-left: 0;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -1px;
+    right: -1px;
     z-index: 1;
   }
 
@@ -45,7 +45,7 @@
   }
 
   .nav__hidden{
-    display: none;
+    display: flex;
     animation-name: hidden-nav;
     animation-duration: 1s;
     animation-iteration-count: 1;
@@ -76,6 +76,7 @@
     color: #ffffff;
     border: none;
     transition: .4s;
+    transform: rotate(180deg);
   }
 
   .nav__btn:hover{
@@ -229,7 +230,8 @@
     max-width: 350px;
   }
   100% {
-    display: none !important;
+    display: none;
+    padding: 0;
     max-width: 0;
     opacity: 0;
   }
