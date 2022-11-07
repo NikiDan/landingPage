@@ -3,6 +3,7 @@ import './style.css';
 import HtmlOutlinedIcon from '@mui/icons-material/HtmlOutlined';
 import CssOutlinedIcon from '@mui/icons-material/CssOutlined';
 import JavascriptOutlinedIcon from '@mui/icons-material/JavascriptOutlined';
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
 import imgReact from '../img/icons8-react.svg';
 import imgHTML from '../img/icons8-html-5.svg';
@@ -13,20 +14,63 @@ import imgSquare from '../img/Square.png';
 import imgTodo from '../img/Todo.png';
 
 const ContentMobile = () => {
+
+    const userWidth = window.innerWidth;
+    const btnViewWidth = 650;
+
+    const showNav = () => {
+        const invisNav = document.getElementById("nav-container");
+        const btnNav = document.getElementById("btnNav");
+
+        if (invisNav.className === "nav-container__hidden__content") {
+            invisNav.className = "nav-container";
+
+            btnNav.style.transform = "rotate(180deg)";
+        }
+        else{
+            invisNav.style.display = "nav-container__hidden";
+        }
+    };
+
     return(
         <div className="content">
-            <div className="nav-container">
-                <ul className="nav">
-                    <li className="nav__item">
-                        <a className="active" href="#">About</a>
-                    </li>
-                    <li className="nav__item"><a className="active" href="#"> Resume</a>
-                    </li>
-                    <li className="nav__item">
-                        <a className="active" href="#">Portfolio</a>
-                    </li>
-                </ul>
-            </div>
+            {userWidth > btnViewWidth ?
+                    <div className="nav-container">
+                        <ul className="nav">
+                            <li className="nav__item">
+                                <a className="active" href="#">About</a>
+                            </li>
+                            <li className="nav__item">
+                                <a className="active" href="#"> Resume</a>
+                            </li>
+                            <li className="nav__item">
+                                <a className="active" href="#">Portfolio</a>
+                            </li>
+                            <button className="nav__btn" id="btnNav" onClick={showNav} type="submit">
+                                <MenuOpenIcon/>
+                            </button>
+                        </ul>
+                    </div>
+                    :
+                    <div className="nav-container__hidden">
+                        <button className="nav__btn" id="btnNav" onClick={showNav} type="submit">
+                            <MenuOpenIcon/>
+                        </button>
+                        <div className="nav-container__hidden__content" id="nav-container">
+                            <ul className="nav">
+                                <li className="nav__item">
+                                    <a className="active" href="#">About</a>
+                                </li>
+                                <li className="nav__item">
+                                    <a className="active" href="#"> Resume</a>
+                                </li>
+                                <li className="nav__item">
+                                    <a className="active" href="#">Portfolio</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            }
             <div className="description">
                 <h1 className="description__title">About Me</h1>
                 <p className="description__inf">I'm a Front-end Developer from Grodno, Belarus and I work in web development.</p>

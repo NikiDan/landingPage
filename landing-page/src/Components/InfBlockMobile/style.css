@@ -42,6 +42,15 @@
     margin-top: 0;
   }
 
+  .title__btn{
+    color: #ffffff;
+    transition: .4s;
+  }
+
+  .show-btn:hover span{
+    color: #ffdb6e;
+  }
+
   .show-btn {
     cursor: pointer;
     display: block;

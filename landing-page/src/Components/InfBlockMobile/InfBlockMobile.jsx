@@ -42,7 +42,7 @@ const InfBlockMobile = () => {
             <span className="badge">Front-end Developer</span>
           </div>
           <button className="show-btn" type="submit" onClick={showContacts}>
-            <span id="btnTitle">Show Contacts</span>
+            <span id="btnTitle" className="title__btn">Show Contacts</span>
           </button>
         </div>
         <div
