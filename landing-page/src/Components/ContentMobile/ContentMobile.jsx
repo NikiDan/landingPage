@@ -19,24 +19,31 @@ const ContentMobile = () => {
     const btnViewWidth = 650;
 
     const showNav = () => {
-        const invisNav = document.getElementById("nav-container");
+        const invisNav = document.getElementById("nav");
+        const invisContainer = document.getElementById("nav-container");
         const btnNav = document.getElementById("btnNav");
 
-        if (invisNav.className === "nav-container__hidden__content") {
-            invisNav.className = "nav-container";
+        if (invisNav.className === "nav") {
+            invisNav.classList.remove('nav');
+            invisNav.classList.add('nav__hidden');
 
-            btnNav.style.transform = "rotate(180deg)";
+            btnNav.style.transform = "rotate(360deg)";
+            invisContainer.style.padding = "0 10px";
+
         }
         else{
-            invisNav.style.display = "nav-container__hidden";
+            invisNav.classList.remove('nav__hidden');
+            invisNav.classList.add('nav');
+
+            btnNav.style.transform = "rotate(180deg)";
         }
     };
 
     return(
         <div className="content">
             {userWidth > btnViewWidth ?
-                    <div className="nav-container">
-                        <ul className="nav">
+                    <div className="nav-container" id="nav-container">
+                        <ul className="nav" id="nav">
                             <li className="nav__item">
                                 <a className="active" href="#">About</a>
                             </li>
@@ -46,18 +53,14 @@ const ContentMobile = () => {
                             <li className="nav__item">
                                 <a className="active" href="#">Portfolio</a>
                             </li>
-                            <button className="nav__btn" id="btnNav" onClick={showNav} type="submit">
-                                <MenuOpenIcon/>
-                            </button>
                         </ul>
-                    </div>
-                    :
-                    <div className="nav-container__hidden">
                         <button className="nav__btn" id="btnNav" onClick={showNav} type="submit">
                             <MenuOpenIcon/>
                         </button>
-                        <div className="nav-container__hidden__content" id="nav-container">
-                            <ul className="nav">
+                    </div>
+                    :
+                    <div className="nav-container" id="nav-container">
+                            <ul className="nav__hidden" id="nav">
                                 <li className="nav__item">
                                     <a className="active" href="#">About</a>
                                 </li>
@@ -68,7 +71,9 @@ const ContentMobile = () => {
                                     <a className="active" href="#">Portfolio</a>
                                 </li>
                             </ul>
-                        </div>
+                            <button className="nav__btn" id="btnNav" onClick={showNav} type="submit">
+                                <MenuOpenIcon/>
+                            </button>
                     </div>
             }
             <div className="description">
