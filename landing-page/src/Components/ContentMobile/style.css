@@ -298,6 +298,45 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+
+  .nav__btn{
+    display: none;
+  }
+
+  .nav, .nav-container{
+    width: 96.1%;
+  }
+
+  .nav{
+    justify-content: space-around;
+  }
+
+  .nav-container{
+    border-radius: 20px 20px 0 0;
+    justify-content: center;
+  }
+
+  .description{
+    margin-top: 50px;
+  }
+
+  .nav__hidden{
+    animation-name: none;
+    width: 60%;
+    justify-content: space-around;
+  }
+  .nav__item{
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .nav-container{
+    width: 96%;
+  }
+}
+
 @media screen and (max-width: 470px) {
   .prof-skill__inf__item{
     padding: 20px 20px 10px 20px;
