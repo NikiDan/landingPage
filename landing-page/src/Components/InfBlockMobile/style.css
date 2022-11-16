@@ -147,3 +147,15 @@
     }
   }
 }
+
+@media screen and (max-width: 770px) {
+  .detail-inf{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .detail-inf{
+    width: 100%;
+  }
+}
