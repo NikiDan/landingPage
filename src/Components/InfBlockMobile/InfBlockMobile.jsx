@@ -1,3 +1,5 @@
+import React from 'react';
+
 import "./style.css";
 
 import imgNik from "../img/beautiful2.jpg";

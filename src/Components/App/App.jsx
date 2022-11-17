@@ -1,3 +1,5 @@
+import React from 'react';
+
 import InfBlockPc from "../InfBlockPc";
 import InfBlockMobile from "../InfBlockMobile";
 import ContentPc from "../ContentPc";
