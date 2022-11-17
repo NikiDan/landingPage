@@ -67,10 +67,10 @@ const ContentMobile = () => {
                                 <li className="nav__item">
                                     <a className="active" href="#">About</a>
                                 </li>
-                                <li className="nav__item">
+                                <li className="nav__item nav__resume">
                                     <a className="active" href="#"> Resume</a>
                                 </li>
-                                <li className="nav__item">
+                                <li className="nav__item nav__portfolio">
                                     <a className="active" href="#">Portfolio</a>
                                 </li>
                             </ul>
