@@ -13,6 +13,7 @@ import imgJS from '../img/icons8-javascript.svg';
 import imgNeirika from '../img/Neirika.png';
 import imgSquare from '../img/Square.png';
 import imgTodo from '../img/Todo.png';
+import {Link} from "react-router-dom";
 
 const ContentPc = () => {
 
@@ -21,12 +22,13 @@ const ContentPc = () => {
             <div className="nav-container">
                 <ul className="nav">
                     <li className="nav__item">
-                        <a className="active" href="#">About</a>
-                    </li>
-                    <li className="nav__item"><a className="active" href="#"> Resume</a>
+                        <Link className="active" to="/">About</Link>
                     </li>
                     <li className="nav__item">
-                        <a className="active" href="#">Portfolio</a>
+                        <Link className="active" to="/">Resume</Link>
+                    </li>
+                    <li className="nav__item">
+                        <Link className="active" to="Portfolio">Portfolio</Link>
                     </li>
                 </ul>
             </div>

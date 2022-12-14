@@ -14,6 +14,7 @@ import imgJS from '../img/icons8-javascript.svg';
 import imgNeirika from '../img/Neirika.png';
 import imgSquare from '../img/Square.png';
 import imgTodo from '../img/Todo.png';
+import {Link} from "react-router-dom";
 
 const ContentMobile = () => {
 
@@ -48,13 +49,13 @@ const ContentMobile = () => {
                     <div className="nav-container" id="nav-container">
                         <ul className="nav" id="nav">
                             <li className="nav__item">
-                                <a className="active" href="#">About</a>
+                                <Link className="active" to="/">About</Link>
                             </li>
                             <li className="nav__item">
-                                <a className="active" href="#"> Resume</a>
+                                <Link className="active" to="/"> Resume</Link>
                             </li>
                             <li className="nav__item">
-                                <a className="active" href="#">Portfolio</a>
+                                <Link className="active" to="/portfolio">Portfolio</Link>
                             </li>
                         </ul>
                         <button className="nav__btn" id="btnNav" onClick={showNav} type="submit">

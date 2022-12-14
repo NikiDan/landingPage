@@ -4,13 +4,12 @@ import InfBlockPc from "../InfBlockPc";
 import InfBlockMobile from "../InfBlockMobile";
 import ContentPc from "../ContentPc";
 import ContentMobile from "../ContentMobile";
+// import Portfolio from "../Portfolio";
 
 import './style.css';
 
 // import { createStore } from "redux";
-
-const pcMinWidth = 1262;
-const pcWidth = window.innerWidth;
+// import { Routes, Route } from 'react-router-dom';
 
 // const defaultState = {
 //     pc: true,
@@ -33,20 +32,23 @@ const pcWidth = window.innerWidth;
 
 const App = () => {
 
+    const pcMinWidth = 1262;
+    const pcWidth = window.innerWidth;
+
   return (
-    <div className="App">
-        { pcWidth >= pcMinWidth ?
-            <div className="pcVersion">
-                <InfBlockPc/>
-                <ContentPc/>
-            </div>
-            :
-            <div className="mobileVersion">
-                <InfBlockMobile/>
-                <ContentMobile/>
-            </div>
-        }
-    </div>
+        <div className="App">
+            { pcWidth >= pcMinWidth ?
+                <div className="pcVersion">
+                  <InfBlockPc/>
+                  <ContentPc/>
+                </div>
+                :
+                <div className="mobileVersion">
+                  <InfBlockMobile/>
+                  <ContentMobile/>
+                </div>
+            }
+        </div>
   );
 }
 

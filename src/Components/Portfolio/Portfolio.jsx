@@ -1,13 +1,31 @@
 import React from 'react';
 
 import './style.css';
+import InfBlockPc from "../InfBlockPc";
+import PortfolioPc from "../PortfolioPc";
+import InfBlockMobile from "../InfBlockMobile";
+import PortfolioMobile from "../PortfolioMobile";
 
-function Portfolio(){
+const Portfolio = () => {
+
+    const pcMinWidth = 1262;
+    const pcWidth = window.innerWidth;
+
     return(
-        <div className="Portfolio">
-            <button>Click me</button>
+        <div className="App">
+            { pcWidth >= pcMinWidth ?
+                <div className="pcVersion">
+                    <InfBlockPc/>
+                    <PortfolioPc/>
+                </div>
+                :
+                <div className="mobileVersion">
+                    <InfBlockMobile/>
+                    <PortfolioMobile/>
+                </div>
+            }
         </div>
     );
 }
 
-export default Portfolio;
+export default  Portfolio ;
