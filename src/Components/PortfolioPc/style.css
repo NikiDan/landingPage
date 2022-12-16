@@ -1,0 +1,36 @@
+.portfolio__content{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+
+.portfolio__card{
+    border: 1px solid #FCFCFC;
+}
+
+.portfolio__item {
+    width: 34%;
+}
+
+.card__img-container{
+    background: #000000;
+    overflow: hidden;
+    /*border-radius: 8px;*/
+    z-index: 1;
+}
+
+.card__img{
+    display: block;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: opacity 124ms linear, transform 124ms linear;
+    /*border-radius: 8px;*/
+}
+
+.card__img:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}

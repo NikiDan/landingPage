@@ -111,7 +111,6 @@ const ContentMobile = () => {
                 <div className="portfolio__item neirika">
                     <a href="https://nikidan.github.io/Neirika/index.html"
                        target="_blank"
-                       className="portfolio__card-link"
                        rel="noopener noreferrer"
                     >
                         <div className="img-container">
@@ -122,7 +121,6 @@ const ContentMobile = () => {
                 <div className="portfolio__item square">
                     <a href="https://nikidan.github.io/CvetOzera/index.html"
                        target="_blank"
-                       className="portfolio__card"
                        rel="noopener noreferrer"
                     >
                         <div className="img-container">
@@ -133,7 +131,6 @@ const ContentMobile = () => {
                 <div className="portfolio__item todo">
                     <a href="https://heartfelt-bunny-71754e.netlify.app/"
                        target="_blank"
-                       className="portfolio__card-link"
                        rel="noopener noreferrer"
                     >
                         <div className="img-container">
