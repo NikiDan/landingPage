@@ -322,9 +322,9 @@
     margin: 0;
   }
 
-  .portfolio{
-    flex-direction: column;
-  }
+  /*.portfolio{*/
+  /*  flex-direction: column;*/
+  /*}*/
 
   .portfolio__item{
     width: 100%;

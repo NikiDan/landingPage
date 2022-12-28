@@ -66,13 +66,13 @@ const ContentMobile = () => {
                     <div className="nav-container" id="nav-container">
                             <ul className="nav__hidden" id="nav">
                                 <li className="nav__item">
-                                    <a className="active" href="#">About</a>
+                                    <Link className="active" to="/">About</Link>
                                 </li>
                                 <li className="nav__item nav__resume">
-                                    <a className="active" href="#"> Resume</a>
+                                    <Link className="active" to="/"> Resume</Link>
                                 </li>
                                 <li className="nav__item nav__portfolio">
-                                    <a className="active" href="#">Portfolio</a>
+                                    <Link className="active" to="/portfolio">Portfolio</Link>
                                 </li>
                             </ul>
                             <button className="nav__btn" id="btnNav" onClick={showNav} type="submit">
