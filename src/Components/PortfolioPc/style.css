@@ -1,5 +1,10 @@
 .portfolio__content__main{
-    padding-top: 0;
+    background-color: #1e1e1f;
+    border: 1px solid #383838;
+    border-radius: 20px;
+    box-shadow: -4px 8px 24px rgb(0 0 0 / 25%);
+    padding: 0 2.7rem 1.875rem 1.875rem;
+    position: relative;
 }
 
 .portfolio__header__text{
@@ -20,6 +25,7 @@
 
 .portfolio__card{
     border: 1px solid #FCFCFC;
+    margin-right: 20px;
 }
 
 .portfolio__item {
@@ -53,6 +59,6 @@
     font-size: 14px !important;
 }
 
-.portfolio__card-link{
-    padding-left: 8px !important;
+#todo{
+    margin-right: 0;
 }
