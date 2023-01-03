@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import imgNeirika from "../img/Neirika.png";
 import imgSquare from "../img/Square.png";
 import imgTodo from "../img/Todo.png";
+import imgSoon from "../img/coming-soon-sign.png";
 
 import Card from '@mui/material/Card';
 import { CardActionArea } from '@mui/material';
@@ -14,7 +15,7 @@ import {Typography} from "@mui/material";
 
 const PortfolioPc = () => {
 
-    const card = [
+    const cardRowFirst = [
         {
             key: "neirika",
             link: "https://nikidan.github.io/Neirika/index.html",
@@ -35,6 +36,48 @@ const PortfolioPc = () => {
         },
     ]
 
+    const cardRowSecond = [
+        {
+            key: "soon1",
+            link: "#",
+            title: "Coming soon ...",
+            img: imgSoon
+        },
+        {
+            key: "soon2",
+            link: "#",
+            title: "Coming soon ...",
+            img: imgSoon
+        },
+        {
+            key: "soon3",
+            link: "#",
+            title: "Coming soon ...",
+            img: imgSoon
+        },
+    ]
+
+    const cardRowThird = [
+        {
+            key: "soon4",
+            link: "#",
+            title: "Coming soon ...",
+            img: imgSoon
+        },
+        {
+            key: "soon5",
+            link: "#",
+            title: "Coming soon ...",
+            img: imgSoon
+        },
+        {
+            key: "soon6",
+            link: "#",
+            title: "Coming soon ...",
+            img: imgSoon
+        },
+    ]
+
     return(
         <div className="portfolio__content__main">
             <h1 className="portfolio__header__text">My projects</h1>
@@ -51,8 +94,54 @@ const PortfolioPc = () => {
                     </li>
                 </ul>
             </div>
-            <div className="portfolio__content">
-                {card.map((item) => (
+            <div className="portfolio__content_row1">
+                {cardRowFirst.map((item) => (
+                    <Card className="portfolio__item portfolio__card" key={item.key} id={item.key}>
+                        <CardActionArea href={item.link}
+                                        target="_blank"
+                                        className="portfolio__card-link"
+                                        rel="noopener noreferrer"
+                        >
+                            <CardMedia className="card__img-container"
+                                       component="img"
+                                       alt="Neirika homepage"
+                                       height="140"
+                                       image={item.img}
+                            />
+                            <CardContent >
+                                <Typography component="p" className="card__description">
+                                    {item.title}
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+                ))}
+            </div>
+            <div className="portfolio__content_row2">
+                {cardRowSecond.map((item) => (
+                    <Card className="portfolio__item portfolio__card" key={item.key} id={item.key}>
+                        <CardActionArea href={item.link}
+                                        target="_blank"
+                                        className="portfolio__card-link"
+                                        rel="noopener noreferrer"
+                        >
+                            <CardMedia className="card__img-container"
+                                       component="img"
+                                       alt="Neirika homepage"
+                                       height="140"
+                                       image={item.img}
+                            />
+                            <CardContent >
+                                <Typography component="p" className="card__description">
+                                    {item.title}
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+                ))}
+            </div>
+            <div className="portfolio__content_row3">
+                {cardRowThird.map((item) => (
                     <Card className="portfolio__item portfolio__card" key={item.key} id={item.key}>
                         <CardActionArea href={item.link}
                                         target="_blank"
