@@ -50,14 +50,26 @@
     height: auto;
 }
 
-.portfolio__card-link, .card__description{
+.portfolio__card-link, .card__title{
     text-decoration: none;
     text-transform: uppercase;
     color: #d6d6d6;
 }
 
+.portfolio__card-link{
+    height: 100%;
+}
+
+.card__title{
+    font-size: 16px !important;
+}
+
 .card__description{
-    font-size: 14px !important;
+    color: #d6d6d6ad !important;
+    text-transform: none;
+    border-top: 1px solid;
+    padding-top: 5px;
+    margin-top: 5px !important;
 }
 
 #todo, #soon3, #soon6{

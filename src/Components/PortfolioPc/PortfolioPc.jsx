@@ -19,19 +19,22 @@ const PortfolioPc = () => {
         {
             key: "neirika",
             link: "https://nikidan.github.io/Neirika/index.html",
-            title: "Neirika homepage",
+            title: "Neirika",
+            description: "Responsive and adaptive pixel perfect layout without using JavaScript",
             img: imgNeirika
         },
         {
             key: "cvetOzera",
             link: "https://nikidan.github.io/CvetOzera/index.html",
             title: "Store",
+            description: "Static pixel perfect layout without using JavaScript",
             img: imgSquare
         },
         {
             key: "todo",
             link: "https://heartfelt-bunny-71754e.netlify.app/",
             title: "Todo list",
+            description: "React Todo list with localStorage, filters, animations and adaptive layout",
             img: imgTodo
         },
     ]
@@ -109,8 +112,11 @@ const PortfolioPc = () => {
                                        image={item.img}
                             />
                             <CardContent >
-                                <Typography component="p" className="card__description">
+                                <Typography gutterBottom variant="h5" component="div" className="card__title">
                                     {item.title}
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary" className="card__description">
+                                    {item.description}
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
@@ -132,7 +138,7 @@ const PortfolioPc = () => {
                                        image={item.img}
                             />
                             <CardContent >
-                                <Typography component="p" className="card__description">
+                                <Typography component="p" className="card__title">
                                     {item.title}
                                 </Typography>
                             </CardContent>
@@ -155,7 +161,7 @@ const PortfolioPc = () => {
                                        image={item.img}
                             />
                             <CardContent >
-                                <Typography component="p" className="card__description">
+                                <Typography component="p" className="card__title">
                                     {item.title}
                                 </Typography>
                             </CardContent>
