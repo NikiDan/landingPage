@@ -9,13 +9,14 @@ import Card from '@mui/material/Card';
 import { CardActionArea } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+import Grid from '@mui/material/Unstable_Grid2';
 
 import "./style.css";
 import {Typography} from "@mui/material";
 
 const PortfolioPc = () => {
 
-    const cardRowFirst = [
+    const card = [
         {
             key: "neirika",
             link: "https://nikidan.github.io/Neirika/index.html",
@@ -37,49 +38,49 @@ const PortfolioPc = () => {
             description: "React Todo list with localStorage, filters, animations and adaptive layout",
             img: imgTodo
         },
-    ]
-
-    const cardRowSecond = [
         {
             key: "soon1",
-            link: "#",
+            link: " ",
             title: "Coming soon ...",
+            description: "Coming soon ...",
             img: imgSoon
         },
         {
             key: "soon2",
-            link: "#",
+            link: " ",
             title: "Coming soon ...",
+            description: "Coming soon ...",
             img: imgSoon
         },
         {
             key: "soon3",
-            link: "#",
+            link: " ",
             title: "Coming soon ...",
+            description: "Coming soon ...",
             img: imgSoon
         },
-    ]
-
-    const cardRowThird = [
         {
             key: "soon4",
-            link: "#",
+            link: " ",
             title: "Coming soon ...",
+            description: "Coming soon ...",
             img: imgSoon
         },
         {
             key: "soon5",
-            link: "#",
+            link: " ",
             title: "Coming soon ...",
+            description: "Coming soon ...",
             img: imgSoon
         },
         {
             key: "soon6",
-            link: "#",
+            link: " ",
             title: "Coming soon ...",
+            description: "Coming soon ...",
             img: imgSoon
-        },
-    ]
+        }
+    ];
 
     return(
         <div className="portfolio__content__main">
@@ -97,9 +98,12 @@ const PortfolioPc = () => {
                     </li>
                 </ul>
             </div>
-            <div className="portfolio__content_row1">
-                {cardRowFirst.map((item) => (
-                    <Card className="portfolio__item portfolio__card" key={item.key} id={item.key}>
+            <Grid container spacing={{ xs: 2, md: 2 }}
+                  columns={{ xs: 4, sm: 8, md: 12 }}
+                  className="portfolio__content">
+                {card.map((item) => (
+                    <Grid xs={2} sm={4} md={4} key={item.key}>
+                    <Card className="portfolio__card" key={item.key} id={item.key}>
                         <CardActionArea href={item.link}
                                         target="_blank"
                                         className="portfolio__card-link"
@@ -121,54 +125,9 @@ const PortfolioPc = () => {
                             </CardContent>
                         </CardActionArea>
                     </Card>
+                    </Grid>
                 ))}
-            </div>
-            <div className="portfolio__content_row2">
-                {cardRowSecond.map((item) => (
-                    <Card className="portfolio__item portfolio__card" key={item.key} id={item.key}>
-                        <CardActionArea href={item.link}
-                                        target="_blank"
-                                        className="portfolio__card-link"
-                                        rel="noopener noreferrer"
-                        >
-                            <CardMedia className="card__img-container"
-                                       component="img"
-                                       alt="Neirika homepage"
-                                       height="140"
-                                       image={item.img}
-                            />
-                            <CardContent >
-                                <Typography component="p" className="card__title">
-                                    {item.title}
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-                ))}
-            </div>
-            <div className="portfolio__content_row3">
-                {cardRowThird.map((item) => (
-                    <Card className="portfolio__item portfolio__card" key={item.key} id={item.key}>
-                        <CardActionArea href={item.link}
-                                        target="_blank"
-                                        className="portfolio__card-link"
-                                        rel="noopener noreferrer"
-                        >
-                            <CardMedia className="card__img-container"
-                                       component="img"
-                                       alt="Neirika homepage"
-                                       height="140"
-                                       image={item.img}
-                            />
-                            <CardContent >
-                                <Typography component="p" className="card__title">
-                                    {item.title}
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-                ))}
-            </div>
+            </Grid>
         </div>
     );
 }

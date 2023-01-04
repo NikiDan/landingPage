@@ -16,7 +16,7 @@
     bottom: 5px;
 }
 
-.portfolio__content_row1, .portfolio__content_row2, .portfolio__content_row3{
+.portfolio__content{
     display: flex;
     width: 100%;
     height: auto;
@@ -25,12 +25,7 @@
 }
 
 .portfolio__card{
-    border: 1px solid #FCFCFC;
-    margin-right: 20px;
-}
-
-.portfolio__item {
-    width: 34%;
+    height: 100%;
     background-color: #2a2a2b !important;
     border: 1px solid #383838;
     color: #d6d6d6 !important;
@@ -39,7 +34,6 @@
 .card__img-container{
     background: #000000;
     overflow: hidden;
-    /*border-radius: 8px;*/
     z-index: 1;
 }
 
