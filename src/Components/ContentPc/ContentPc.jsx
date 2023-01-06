@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './style.css';
+import NavigationPc from "../NavigationPc/NavigationPc";
 
 import HtmlOutlinedIcon from '@mui/icons-material/HtmlOutlined';
 import CssOutlinedIcon from '@mui/icons-material/CssOutlined';
@@ -13,25 +14,12 @@ import imgJS from '../img/icons8-javascript.svg';
 import imgNeirika from '../img/Neirika.png';
 import imgSquare from '../img/Square.png';
 import imgTodo from '../img/Todo.png';
-import {Link} from "react-router-dom";
 
 const ContentPc = () => {
 
     return(
         <div className="content">
-            <div className="nav-container">
-                <ul className="nav">
-                    <li className="nav__item">
-                        <Link className="active" to="/">About</Link>
-                    </li>
-                    <li className="nav__item">
-                        <Link className="active" to="/">Resume</Link>
-                    </li>
-                    <li className="nav__item">
-                        <Link className="active" to="Portfolio">Portfolio</Link>
-                    </li>
-                </ul>
-            </div>
+            <NavigationPc/>
             <div className="description">
                 <h1 className="description__title">About Me</h1>
                 <p className="description__inf">I&apos;m a Front-end Developer from Grodno, Belarus and I work in web development.</p>

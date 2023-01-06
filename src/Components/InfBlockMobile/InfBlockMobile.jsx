@@ -1,6 +1,7 @@
 import React from 'react';
 
 import "./style.css";
+import { useShowContacts } from "./hooks";
 
 import imgNik from "../img/beautiful2.jpg";
 import imgInsta from "../img/icons8-instagram.svg";
@@ -13,24 +14,7 @@ import CakeOutlinedIcon from "@mui/icons-material/CakeOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 
 const InfBlockMobile = () => {
-  const showContacts = () => {
-    const invisInf = document.getElementById("invisible-inf");
-    const btnTitle = document.getElementById("btnTitle");
-
-    if (invisInf.className === "invisible-inf__hidden") {
-      invisInf.style.display = "block";
-
-      invisInf.classList.remove("invisible-inf__hidden");
-      invisInf.classList.add("invisible-inf__active");
-
-      btnTitle.innerHTML = "Hide Contacts";
-    } else {
-      invisInf.classList.remove("invisible-inf__active");
-      invisInf.classList.add("invisible-inf__hidden");
-
-      btnTitle.innerHTML = "Show Contacts";
-    }
-  };
+  const showContacts = useShowContacts();
 
   return (
     <div className="inf">

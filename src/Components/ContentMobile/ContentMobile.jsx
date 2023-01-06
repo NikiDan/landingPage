@@ -5,7 +5,6 @@ import './style.css';
 import HtmlOutlinedIcon from '@mui/icons-material/HtmlOutlined';
 import CssOutlinedIcon from '@mui/icons-material/CssOutlined';
 import JavascriptOutlinedIcon from '@mui/icons-material/JavascriptOutlined';
-import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
 import imgReact from '../img/icons8-react.svg';
 import imgHTML from '../img/icons8-html-5.svg';
@@ -14,54 +13,14 @@ import imgJS from '../img/icons8-javascript.svg';
 import imgNeirika from '../img/Neirika.png';
 import imgSquare from '../img/Square.png';
 import imgTodo from '../img/Todo.png';
-import { Link } from "react-router-dom";
 
-import { useShowNav } from "./hooks";
+import NavigationMobile from "../NavigationMobile";
 
 const ContentMobile = () => {
 
-    const userWidth = window.innerWidth;
-    const btnViewWidth = 650;
-
-    const showNav = useShowNav();
-
     return(
         <div className="content">
-            {userWidth > btnViewWidth ?
-                    <div className="nav-container" id="nav-container">
-                        <ul className="nav" id="nav">
-                            <li className="nav__item">
-                                <Link className="active" to="/">About</Link>
-                            </li>
-                            <li className="nav__item">
-                                <Link className="active" to="/"> Resume</Link>
-                            </li>
-                            <li className="nav__item">
-                                <Link className="active" to="/portfolio">Portfolio</Link>
-                            </li>
-                        </ul>
-                        <button className="nav__btn" id="btnNav" onClick={showNav} type="submit">
-                            <MenuOpenIcon/>
-                        </button>
-                    </div>
-                    :
-                    <div className="nav-container" id="nav-container">
-                            <ul className="nav__hidden" id="nav">
-                                <li className="nav__item">
-                                    <Link className="active" to="/">About</Link>
-                                </li>
-                                <li className="nav__item nav__resume">
-                                    <Link className="active" to="/"> Resume</Link>
-                                </li>
-                                <li className="nav__item nav__portfolio">
-                                    <Link className="active" to="/portfolio">Portfolio</Link>
-                                </li>
-                            </ul>
-                            <button className="nav__btn" id="btnNav" onClick={showNav} type="submit">
-                                <MenuOpenIcon/>
-                            </button>
-                    </div>
-            }
+            <NavigationMobile/>
             <div className="description">
                 <h1 className="description__title">About Me</h1>
                 <p className="description__inf">I&apos;m a Front-end Developer from Grodno, Belarus and I work in web development.</p>

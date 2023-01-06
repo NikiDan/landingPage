@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import card from "../Portfolio/CardStore/cardStore";
+import NavigationPc from "../NavigationPc";
 
 import Card from '@mui/material/Card';
 import { CardActionArea } from '@mui/material';
@@ -16,19 +16,7 @@ const PortfolioPc = () => {
     return(
         <div className="portfolio__content__main">
             <h1 className="portfolio__header__text">My projects</h1>
-            <div className="nav-container">
-                <ul className="nav">
-                    <li className="nav__item">
-                        <Link className="active" to="/">About</Link>
-                    </li>
-                    <li className="nav__item">
-                        <Link className="active" to="/">Resume</Link>
-                    </li>
-                    <li className="nav__item">
-                        <Link className="active">Portfolio</Link>
-                    </li>
-                </ul>
-            </div>
+            <NavigationPc/>
             <Grid container spacing={{ xs: 2, md: 2 }}
                   columns={{ xs: 4, sm: 8, md: 12 }}
                   className="portfolio__content">
