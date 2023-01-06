@@ -194,11 +194,19 @@
   .todo{
     margin-bottom: 0;
   }
+
+  .footer-text{
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 470px) {
   .prof-skill__inf__item{
     padding: 20px 20px 10px 20px;
+  }
+
+  .portfolio{
+    flex-direction: column;
   }
 }
 
