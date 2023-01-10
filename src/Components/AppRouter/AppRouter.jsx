@@ -1,7 +1,7 @@
 import React from 'react';
 import App from "../App/App";
 import {Link, Route, Routes} from "react-router-dom";
-import Portfolio from "../Portfolio";
+import Portfolio from "../PotfolioPage/Portfolio";
 import { v4 as uuidv4 } from 'uuid';
 
 const AppRouter = () => {

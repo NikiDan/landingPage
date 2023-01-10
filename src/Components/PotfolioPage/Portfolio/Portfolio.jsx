@@ -1,9 +1,9 @@
 import React from 'react';
 
 import './style.css';
-import InfBlockPc from "../InfBlockPc";
+import InfBlockPc from "../../InfBlock/InfBlockPc";
 import PortfolioPc from "../PortfolioPc";
-import InfBlockMobile from "../InfBlockMobile";
+import InfBlockMobile from "../../InfBlock/InfBlockMobile";
 import PortfolioMobile from "../PortfolioMobile";
 
 const Portfolio = () => {

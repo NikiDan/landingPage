@@ -1,16 +1,7 @@
 .nav-container{
-    background: #2a2a2b;
-    border: 1px solid #383838;
-    border-radius: 0 20px 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 4rem;
     padding: 0 10px;
-    position: absolute;
     top: -1px;
     right: -1px;
-    z-index: 1;
 }
 
 .nav, .nav__hidden {

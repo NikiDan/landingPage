@@ -1,6 +1,6 @@
 import React from 'react';
 import card from "../Portfolio/CardStore/cardStore";
-import NavigationPc from "../NavigationPc";
+import NavigationPc from "../../Navigation/NavigationPc";
 
 import Card from '@mui/material/Card';
 import { CardActionArea } from '@mui/material';

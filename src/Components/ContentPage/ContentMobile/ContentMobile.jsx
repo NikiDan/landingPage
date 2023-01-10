@@ -1,25 +1,26 @@
 import React from 'react';
 
 import './style.css';
-import NavigationPc from "../NavigationPc/NavigationPc";
 
 import HtmlOutlinedIcon from '@mui/icons-material/HtmlOutlined';
 import CssOutlinedIcon from '@mui/icons-material/CssOutlined';
 import JavascriptOutlinedIcon from '@mui/icons-material/JavascriptOutlined';
 
-import imgReact from '../img/icons8-react.svg';
-import imgHTML from '../img/icons8-html-5.svg';
-import imgCSS from '../img/icons8-css3.svg';
-import imgJS from '../img/icons8-javascript.svg';
-import imgNeirika from '../img/Neirika.png';
-import imgSquare from '../img/Square.png';
-import imgTodo from '../img/Todo.png';
+import imgReact from '../../img/icons8-react.svg';
+import imgHTML from '../../img/icons8-html-5.svg';
+import imgCSS from '../../img/icons8-css3.svg';
+import imgJS from '../../img/icons8-javascript.svg';
+import imgNeirika from '../../img/Neirika.png';
+import imgSquare from '../../img/Square.png';
+import imgTodo from '../../img/Todo.png';
 
-const ContentPc = () => {
+import NavigationMobile from "../../Navigation/NavigationMobile";
+
+const ContentMobile = () => {
 
     return(
         <div className="content">
-            <NavigationPc/>
+            <NavigationMobile/>
             <div className="description">
                 <h1 className="description__title">About Me</h1>
                 <p className="description__inf">I&apos;m a Front-end Developer from Grodno, Belarus and I work in web development.</p>
@@ -80,16 +81,16 @@ const ContentPc = () => {
                 </div>
             </div>
             <div className="footer-text">
-            <p className="works">More projects can be found
-                <a className="works__link"
-                target="_blank"
-                href="https://nikidan.github.io/"
-                rel="noopener noreferrer"
-                > here </a>
-            </p>
+                <p className="works">More projects can be found
+                    <a className="works__link"
+                       target="_blank"
+                       href="https://nikidan.github.io/"
+                       rel="noopener noreferrer"
+                    > here </a>
+                </p>
             </div>
         </div>
     );
 }
 
-export default ContentPc;
+export default ContentMobile;

@@ -1,7 +1,7 @@
-import imgNeirika from "../../img/Neirika.png";
-import imgSquare from "../../img/Square.png";
-import imgTodo from "../../img/Todo.png";
-import imgSoon from "../../img/coming-soon-sign.png";
+import imgNeirika from "../../../img/Neirika.png";
+import imgSquare from "../../../img/Square.png";
+import imgTodo from "../../../img/Todo.png";
+import imgSoon from "../../../img/coming-soon-sign.png";
 
     const card = [
         {

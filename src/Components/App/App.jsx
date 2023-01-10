@@ -1,10 +1,9 @@
 import React from 'react';
 
-import InfBlockPc from "../InfBlockPc";
-import InfBlockMobile from "../InfBlockMobile";
-import ContentPc from "../ContentPc";
-import ContentMobile from "../ContentMobile";
-// import Portfolio from "../Portfolio";
+import InfBlockPc from "../InfBlock/InfBlockPc";
+import InfBlockMobile from "../InfBlock/InfBlockMobile";
+import ContentPc from "../ContentPage/ContentPc";
+import ContentMobile from "../ContentPage/ContentMobile";
 
 import './style.css';
 

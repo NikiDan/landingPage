@@ -3,7 +3,7 @@ import React from "react";
 import "./style.css";
 import {Link} from "react-router-dom";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-import {useShowNav} from "../ContentMobile/hooks";
+import {useShowNav} from "../../ContentPage/ContentMobile/hooks";
 
 const NavigationMobile = () => {
 

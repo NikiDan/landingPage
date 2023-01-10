@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NavigationMobile from "../NavigationMobile";
+import NavigationMobile from "../../Navigation/NavigationMobile";
 import card from "../Portfolio/CardStore/cardStore";
 import "./style.css"
 
