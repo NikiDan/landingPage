@@ -1,9 +1,9 @@
 import React from "react";
 
 import "./style.css";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-import {useShowNav} from "../../ContentPage/ContentMobile/hooks";
+import { useShowNav } from "./hooks";
 
 const NavigationMobile = () => {
 
@@ -16,12 +16,12 @@ const NavigationMobile = () => {
         <div>
             {userWidth > btnViewWidth ?
                 <div className="nav-container" id="nav-container">
-                    <ul className="nav" id="nav">
+                    <ul className="navMobile" id="navMobile">
                         <li className="nav__item">
                             <Link className="active" to="/">About</Link>
                         </li>
                         <li className="nav__item">
-                            <Link className="active" to="/"> Resume</Link>
+                            <Link className="active" to="/resume">Resume</Link>
                         </li>
                         <li className="nav__item">
                             <Link className="active" to="/portfolio">Portfolio</Link>
@@ -33,12 +33,12 @@ const NavigationMobile = () => {
                 </div>
                 :
                 <div className="nav-container" id="nav-container">
-                    <ul className="nav__hidden" id="nav">
+                    <ul className="nav__hidden" id="navMobile">
                         <li className="nav__item">
                             <Link className="active" to="/">About</Link>
                         </li>
                         <li className="nav__item nav__resume">
-                            <Link className="active" to="/"> Resume</Link>
+                            <Link className="active" to="/resume">Resume</Link>
                         </li>
                         <li className="nav__item nav__portfolio">
                             <Link className="active" to="/portfolio">Portfolio</Link>

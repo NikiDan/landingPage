@@ -12,10 +12,10 @@ const NavigationPc = () => {
                     <Link className="active" to="/">About</Link>
                 </li>
                 <li className="nav__item">
-                    <Link className="active" to="/">Resume</Link>
+                    <Link className="active" to="/resume">Resume</Link>
                 </li>
                 <li className="nav__item">
-                    <Link className="active" to="Portfolio">Portfolio</Link>
+                    <Link className="active" to="/portfolio">Portfolio</Link>
                 </li>
             </ul>
         </div>

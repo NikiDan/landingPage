@@ -4,7 +4,7 @@
     right: -1px;
 }
 
-.nav, .nav__hidden {
+.navMobile, .nav__hidden {
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -12,7 +12,7 @@
     list-style: none;
 }
 
-.nav{
+.navMobile{
     display: flex;
     animation-name: open-nav;
     animation-duration: 1s;

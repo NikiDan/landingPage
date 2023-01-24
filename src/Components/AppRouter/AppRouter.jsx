@@ -2,6 +2,7 @@ import React from 'react';
 import App from "../App/App";
 import {Link, Route, Routes} from "react-router-dom";
 import Portfolio from "../PotfolioPage/Portfolio";
+import Resume from "../Resume/ResumeApp";
 import { v4 as uuidv4 } from 'uuid';
 
 const AppRouter = () => {
@@ -9,6 +10,7 @@ const AppRouter = () => {
     const navigateRoutes = [
         {path: '/', element: <App />, exact: true},
         {path: '/portfolio', element: <Portfolio />, exact: true},
+        {path: '/resume', element: <Resume />, exact: true},
     ]
 
     return(

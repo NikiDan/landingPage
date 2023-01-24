@@ -1,0 +1,13 @@
+.tired{
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1262px){
+    .tired{
+        margin-top: 50px;
+    }
+}
