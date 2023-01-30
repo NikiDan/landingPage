@@ -2,6 +2,7 @@ import imgNeirika from "../../../img/Neirika.png";
 import imgSquare from "../../../img/Square.png";
 import imgTodo from "../../../img/Todo.png";
 import imgSoon from "../../../img/coming-soon-sign.png";
+import imgPortal from "../../../img/portal.png"
 
     const card = [
         {
@@ -26,11 +27,11 @@ import imgSoon from "../../../img/coming-soon-sign.png";
             img: imgTodo
         },
         {
-            key: "soon1",
-            link: " ",
-            title: "Coming soon ...",
-            description: "Coming soon ...",
-            img: imgSoon
+            key: "portal",
+            link: "https://nikidan.github.io/Portal/LogForm/index.html",
+            title: "Educational portal",
+            description: "My university thesis on HTML, CSS, SASS, JS",
+            img: imgPortal
         },
         {
             key: "soon2",
