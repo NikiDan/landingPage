@@ -27,9 +27,9 @@ import imgPortal from "../../../img/portal.png"
             img: imgTodo
         },
         {
-            key: "portal",
+            key: "thesis",
             link: "https://nikidan.github.io/Portal/LogForm/index.html",
-            title: "Educational portal",
+            title: "Thesis",
             description: "My university thesis on HTML, CSS, SASS, JS",
             img: imgPortal
         },
