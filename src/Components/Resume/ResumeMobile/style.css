@@ -4,3 +4,9 @@
         margin-bottom: 0;
     }
 }
+
+@media screen and (max-width: 475px){
+    #pointText{
+        flex: 0;
+    }
+}
