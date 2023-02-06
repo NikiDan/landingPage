@@ -23,7 +23,7 @@ import imgPortal from "../../../img/portal.png"
             key: "todo",
             link: "https://heartfelt-bunny-71754e.netlify.app/",
             title: "Todo list",
-            description: "React Todo list with localStorage, filters, animations and adaptive layout",
+            description: "React Todo list with localStorage, filters, animation and adaptive layout",
             img: imgTodo
         },
         {
