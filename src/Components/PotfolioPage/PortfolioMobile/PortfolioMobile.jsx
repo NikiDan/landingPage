@@ -11,12 +11,12 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 
 const PortfolioMobile = () => {
-    return(
+    return (
         <div className="content">
             <h1 className="portfolio__header__text">My projects</h1>
             <NavigationMobile/>
-            <Grid container spacing={{ xs: 2, md: 2 }}
-                  columns={{ xs: 4, sm: 8, md: 12 }}
+            <Grid container spacing={{xs: 2, md: 2}}
+                  columns={{xs: 4, sm: 8, md: 12}}
                   className="portfolio__content">
                 {card.map((item) => (
                     <Grid xs={2} sm={4} md={4} key={item.key}>
@@ -32,7 +32,7 @@ const PortfolioMobile = () => {
                                            height="140"
                                            image={item.img}
                                 />
-                                <CardContent >
+                                <CardContent>
                                     <Typography gutterBottom variant="h5" component="div" className="card__title">
                                         {item.title}
                                     </Typography>

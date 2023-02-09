@@ -1,1 +1,1 @@
-export { default } from "./ContentMobile";
+export {default} from "./ContentMobile";

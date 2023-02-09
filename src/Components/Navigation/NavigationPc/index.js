@@ -1,1 +1,1 @@
-export { default } from "./NavigationPc";
+export {default} from "./NavigationPc";

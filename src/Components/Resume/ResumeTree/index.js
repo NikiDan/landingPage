@@ -1,1 +1,1 @@
-export { default } from "./ResumeTree";
+export {default} from "./ResumeTree";

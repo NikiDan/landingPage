@@ -1,12 +1,12 @@
-#pointTitle{
+#pointTitle {
     font-weight: 600;
 }
 
-#pointText{
+#pointText {
     font-weight: 400;
 }
 
-.pointText__description, .pointTitle__description{
+.pointText__description, .pointTitle__description {
     margin: 0;
     color: #d6d6d6ad;
     font-size: 14px;

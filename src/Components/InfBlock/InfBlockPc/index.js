@@ -1,1 +1,1 @@
-export { default } from "./InfBlockPc";
+export {default} from "./InfBlockPc";

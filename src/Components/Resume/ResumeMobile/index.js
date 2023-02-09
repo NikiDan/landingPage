@@ -1,1 +1,1 @@
-export { default } from "./ResumeMobile";
+export {default} from "./ResumeMobile";

@@ -1,10 +1,10 @@
-.pcVersion{
+.pcVersion {
     display: flex;
     justify-content: center;
     padding: 30px;
 }
 
-.mobileVersion{
+.mobileVersion {
     display: flex;
     justify-content: center;
     flex-direction: column;

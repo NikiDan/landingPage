@@ -1,1 +1,1 @@
-export { default } from "./ContentPc";
+export {default} from "./ContentPc";

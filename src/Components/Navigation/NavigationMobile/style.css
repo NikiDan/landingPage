@@ -1,4 +1,4 @@
-.nav-container{
+.nav-container {
     padding: 0 10px;
     top: -1px;
     right: -1px;
@@ -12,7 +12,7 @@
     list-style: none;
 }
 
-.navMobile{
+.navMobile {
     display: flex;
     animation-name: open-nav;
     animation-duration: 1s;
@@ -23,7 +23,7 @@
     animation-delay: 0s;
 }
 
-.nav__hidden{
+.nav__hidden {
     display: flex;
     animation-name: hidden-nav;
     animation-duration: 1s;
@@ -50,7 +50,7 @@
     color: #ffdb6e;
 }
 
-.nav__btn{
+.nav__btn {
     background: #2a2a2b;
     color: #ffffff;
     border: none;
@@ -58,7 +58,7 @@
     transform: rotate(180deg);
 }
 
-.nav__btn:hover{
+.nav__btn:hover {
     color: #ffdb6e;
 }
 
@@ -95,7 +95,7 @@
 
 @media screen and (max-width: 730px) {
 
-    .nav__item{
+    .nav__item {
         margin-right: 1.75rem
     }
 }
@@ -115,40 +115,42 @@
         justify-content: space-around;
     }
 
-    .nav-container{
+    .nav-container {
         width: 100%;
         padding: 0;
         border-radius: 20px 20px 0 0;
         justify-content: flex-end;
     }
 
-    .nav__hidden{
+    .nav__hidden {
         animation-name: none;
         width: 60%;
         justify-content: space-around;
     }
-    .nav__item{
+
+    .nav__item {
         margin: 0;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .nav__hidden{
+    .nav__hidden {
         margin-right: 10px;
     }
 }
+
 @media screen and (max-width: 440px) {
-    .nav__resume{
+    .nav__resume {
         margin: 0 10px;
     }
 
-    .nav__portfolio{
+    .nav__portfolio {
         margin-right: 10px;
     }
 }
 
-@media screen and (max-width: 400px){
-    .nav__hidden{
+@media screen and (max-width: 400px) {
+    .nav__hidden {
         width: 100%;
         justify-content: space-around;
         padding-left: 10px;

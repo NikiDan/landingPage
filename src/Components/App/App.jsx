@@ -34,21 +34,21 @@ const App = () => {
     const pcMinWidth = 1262;
     const pcWidth = window.innerWidth;
 
-  return (
+    return (
         <div className="App">
-            { pcWidth >= pcMinWidth ?
+            {pcWidth >= pcMinWidth ?
                 <div className="pcVersion">
-                  <InfBlockPc/>
-                  <ContentPc/>
+                    <InfBlockPc/>
+                    <ContentPc/>
                 </div>
                 :
                 <div className="mobileVersion">
-                  <InfBlockMobile/>
-                  <ContentMobile/>
+                    <InfBlockMobile/>
+                    <ContentMobile/>
                 </div>
             }
         </div>
-  );
+    );
 }
 
 export default App;

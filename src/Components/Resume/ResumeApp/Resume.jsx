@@ -12,9 +12,9 @@ const Resume = () => {
     const pcMinWidth = 1262;
     const pcWidth = window.innerWidth;
 
-    return(
+    return (
         <div className="App">
-            { pcWidth >= pcMinWidth ?
+            {pcWidth >= pcMinWidth ?
                 <div className="pcVersion">
                     <InfBlockPc/>
                     <ResumePc/>
@@ -29,4 +29,4 @@ const Resume = () => {
     );
 }
 
-export default  Resume ;
+export default Resume;

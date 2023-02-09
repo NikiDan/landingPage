@@ -1,1 +1,1 @@
-export { default } from "./ResumePc";
+export {default} from "./ResumePc";

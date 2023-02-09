@@ -1,1 +1,1 @@
-export { default } from "./InfBlockMobile";
+export {default} from "./InfBlockMobile";

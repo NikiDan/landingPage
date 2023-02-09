@@ -1,1 +1,1 @@
-export { default } from "./PortfolioPc";
+export {default} from "./PortfolioPc";

@@ -17,13 +17,16 @@ import imgTodo from '../../img/Todo.png';
 
 const ContentPc = () => {
 
-    return(
+    return (
         <div className="content">
             <NavigationPc/>
             <div className="description">
                 <h1 className="description__title">About Me</h1>
-                <p className="description__inf">I&apos;m a Front-end Developer from Grodno, Belarus and I work in web development.</p>
-                <p>My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that it is eye-catching and easy to use. My goal is use the most creative way to develop your web-site.</p>
+                <p className="description__inf">I&apos;m a Front-end Developer from Grodno, Belarus and I work in web
+                    development.</p>
+                <p>My job is to build your website so that it is functional and user-friendly but at the same time
+                    attractive. Moreover, I add personal touch to your product and make sure that it is eye-catching and
+                    easy to use. My goal is use the most creative way to develop your web-site.</p>
             </div>
             <h2 className="prof-skills__title">What I do</h2>
             <div className="prof-skills">
@@ -80,13 +83,13 @@ const ContentPc = () => {
                 </div>
             </div>
             <div className="footer-text">
-            <p className="works">More projects can be found
-                <a className="works__link"
-                target="_blank"
-                href="https://nikidan.github.io/"
-                rel="noopener noreferrer"
-                > here </a>
-            </p>
+                <p className="works">More projects can be found
+                    <a className="works__link"
+                       target="_blank"
+                       href="https://nikidan.github.io/"
+                       rel="noopener noreferrer"
+                    > here </a>
+                </p>
             </div>
         </div>
     );

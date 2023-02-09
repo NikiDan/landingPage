@@ -1,9 +1,9 @@
 import React from "react";
 
 import "./style.css";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-import { useShowNav } from "./hooks";
+import {useShowNav} from "./hooks";
 
 const NavigationMobile = () => {
 
@@ -12,7 +12,7 @@ const NavigationMobile = () => {
 
     const showNav = useShowNav();
 
-    return(
+    return (
         <div>
             {userWidth > btnViewWidth ?
                 <div className="nav-container" id="nav-container">

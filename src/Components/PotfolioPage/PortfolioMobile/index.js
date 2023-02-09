@@ -1,1 +1,1 @@
-export { default } from "./PortfolioMobile";
+export {default} from "./PortfolioMobile";

@@ -1,4 +1,4 @@
-.inf{
+.inf {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,7 +6,7 @@
     margin-right: 30px;
 }
 
-.title-inf{
+.title-inf {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,12 +14,12 @@
     background-color: #1e1e1f;
     border: 1px solid #383838;
     border-radius: 20px;
-    box-shadow: -4px 8px 24px rgba( 0, 0, 0, 0.25);
+    box-shadow: -4px 8px 24px rgba(0, 0, 0, 0.25);
     margin-top: 0;
     z-index: 10;
 }
 
-.avatar-box{
+.avatar-box {
     background: linear-gradient(137.84deg, #3F3F40 2.69%, #303030 93.75%);
     overflow: hidden;
     height: calc(100% - 3.75rem);
@@ -27,7 +27,7 @@
     transition: all .3s ease-in-out;
 }
 
-.img{
+.img {
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -36,17 +36,17 @@
     vertical-align: middle;
 }
 
-.title-text{
+.title-text {
     text-align: center;
 }
 
-.title-name{
+.title-name {
     font-size: 1.625rem;
     font-weight: 500;
     margin-bottom: 16px;
 }
 
-.badge{
+.badge {
     background: #2a2a2b;
     font-size: 0.75rem;
     font-weight: 300;
@@ -54,21 +54,21 @@
     padding: 8px 16px;
 }
 
-.separation{
+.separation {
     background: #383838;
     margin: 32px 0;
     height: 1px;
     width: 100%;
 }
 
-.detail-inf{
+.detail-inf {
     list-style: none;
     padding: 0 25px;
     margin-bottom: 8px;
     margin-top: 0;
 }
 
-.detail-inf__item{
+.detail-inf__item {
     color: #FCFCFC;
     font-size: 0.875rem;
     display: flex;
@@ -80,7 +80,7 @@
     white-space: nowrap;
 }
 
-.li__icon{
+.li__icon {
     background: linear-gradient(135deg, #404040 0%, rgba(64, 64, 64, 0) 48.44%);
     font-size: 1.125rem;
     display: inline-flex;
@@ -96,7 +96,7 @@
     width: 48px;
 }
 
-.li__inf{
+.li__inf {
     display: flex;
     align-items: flex-start;
     text-align: center;
@@ -105,7 +105,7 @@
     flex: 1;
 }
 
-.overhead{
+.overhead {
     color: #D6D6D6;
     font-size: 0.75rem;
     font-weight: 400;
@@ -114,20 +114,20 @@
     text-transform: uppercase;
 }
 
-.detail-inf__item a{
+.detail-inf__item a {
     color: #FCFCFC;
     -webkit-text-fill-color: inherit;
     text-decoration: none;
 }
 
-.text-overflow{
+.text-overflow {
     display: block;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
 
-.social-link{
+.social-link {
     font-size: 1.125rem;
     color: #FCFCFC;
     -webkit-text-fill-color: inherit;

@@ -4,9 +4,9 @@ const defaultState = {
 }
 
 export const reducer = (state = defaultState, action) => {
-    switch(action.type){
+    switch (action.type) {
         case "clientWindow":
-            return { ...state, clientWindow: state.clientWindow }
+            return {...state, clientWindow: state.clientWindow}
 
         default:
             return state

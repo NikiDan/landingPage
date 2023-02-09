@@ -11,9 +11,9 @@ const Portfolio = () => {
     const pcMinWidth = 1262;
     const pcWidth = window.innerWidth;
 
-    return(
+    return (
         <div className="App">
-            { pcWidth >= pcMinWidth ?
+            {pcWidth >= pcMinWidth ?
                 <div className="pcVersion">
                     <InfBlockPc/>
                     <PortfolioPc/>
@@ -28,4 +28,4 @@ const Portfolio = () => {
     );
 }
 
-export default  Portfolio ;
+export default Portfolio;
