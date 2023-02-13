@@ -22,16 +22,20 @@ const InfBlockPc = () => {
     return (
         <div className="inf">
             <div className="title-inf">
-                <div className="avatar-box">
-                    <img src={imgNik} alt="Nikita Danilov" className="img"/>
-                </div>
-                <div className="title-text">
-                    <h3 className="title-name">Danilov Nikita</h3>
-                    <span className="badge">Front-end Developer</span>
+                <div className="title-inf__img-name">
+                    <div className="avatar-box">
+                        <img src={imgNik} alt="Nikita Danilov" className="img"/>
+                    </div>
+                    <div className="title-text">
+                        <h3 className="title-name">Danilov Nikita</h3>
+                        <div className="badge__inf">
+                            <span className="badge">Front-end Developer</span>
+                        </div>
+                    </div>
                 </div>
                 {
-                    width < 1262 ?
-                        <div>
+                    width < 560 ?
+                        <div className="inf__personalData">
                             <button className="show-btn" type="submit" onClick={showContacts}>
                                 <span id="btnTitle" className="title__btn">Show Contacts</span>
                             </button>
@@ -41,7 +45,7 @@ const InfBlockPc = () => {
                                 style={{display: "none"}}>
                                 <div className="separation"/>
                                 <div className="detail-inf">
-                                    <ul className="list-inf">
+                                    <ul className="list-inf first-row">
                                         <li className="detail-inf__item">
                                             <span className="li__icon"><EmailOutlinedIcon/></span>
                                             <div className="li__inf">
@@ -52,15 +56,17 @@ const InfBlockPc = () => {
                                                 >nik.edu666@gmail.com</a>
                                             </div>
                                         </li>
-                                        <li className="detail-inf__item">
+                                        <li className="detail-inf__item phone">
                                             <span className="li__icon"><PhoneAndroidOutlinedIcon/></span>
                                             <div className="li__inf">
                                                 <span className="overhead">Phone</span>
-                                                <span className="phone text-overflow"
+                                                <span className="text-overflow"
                                                       title="+375 (29) 601-15-65"
                                                 >+375 (29) 601-15-65</span>
                                             </div>
                                         </li>
+                                    </ul>
+                                    <ul className="list-inf">
                                         <li className="detail-inf__item">
                                             <span className="li__icon"><CakeOutlinedIcon/></span>
                                             <div className="li__inf">
@@ -70,7 +76,7 @@ const InfBlockPc = () => {
                                                 >March 23, 1999</span>
                                             </div>
                                         </li>
-                                        <li className="detail-inf__item">
+                                        <li className="detail-inf__item location">
                                             <span className="li__icon"><LocationOnOutlinedIcon/></span>
                                             <div className="li__inf">
                                                 <span className="overhead">Location</span>
@@ -98,10 +104,10 @@ const InfBlockPc = () => {
                             </div>
                         </div>
                         :
-                        <div>
+                        <div className="visible-inf">
                             <div className="separation"/>
                             <div className="detail-inf">
-                                <ul className="list-inf">
+                                <ul className="list-inf first-row">
                                     <li className="detail-inf__item">
                                         <span className="li__icon"><EmailOutlinedIcon/></span>
                                         <div className="li__inf">
@@ -112,15 +118,17 @@ const InfBlockPc = () => {
                                             >nik.edu666@gmail.com</a>
                                         </div>
                                     </li>
-                                    <li className="detail-inf__item">
+                                    <li className="detail-inf__item phone">
                                         <span className="li__icon"><PhoneAndroidOutlinedIcon/></span>
                                         <div className="li__inf">
                                             <span className="overhead">Phone</span>
-                                            <span className="phone text-overflow"
+                                            <span className="text-overflow"
                                                   title="+375 (29) 601-15-65"
                                             >+375 (29) 601-15-65</span>
                                         </div>
                                     </li>
+                                </ul>
+                                <ul className="list-inf">
                                     <li className="detail-inf__item">
                                         <span className="li__icon"><CakeOutlinedIcon/></span>
                                         <div className="li__inf">
@@ -130,7 +138,7 @@ const InfBlockPc = () => {
                                             >March 23, 1999</span>
                                         </div>
                                     </li>
-                                    <li className="detail-inf__item">
+                                    <li className="detail-inf__item location">
                                         <span className="li__icon"><LocationOnOutlinedIcon/></span>
                                         <div className="li__inf">
                                             <span className="overhead">Location</span>
@@ -154,61 +162,9 @@ const InfBlockPc = () => {
                                     <img src={imgGit} alt="GitHub"/>
                                 </a>
                             </div>
+                            <div/>
                         </div>
                 }
-                {/*<div className="separation"/>*/}
-                {/*<div className="detail-inf">*/}
-                {/*    <ul className="list-inf">*/}
-                {/*        <li className="detail-inf__item">*/}
-                {/*            <span className="li__icon"><EmailOutlinedIcon/></span>*/}
-                {/*            <div className="li__inf">*/}
-                {/*                <span className="overhead">Email</span>*/}
-                {/*                <a className="email-link text-overflow"*/}
-                {/*                   href="mailto:nik.edu666@gmail.com"*/}
-                {/*                   title="nik.edu666@gmail.com"*/}
-                {/*                >nik.edu666@gmail.com</a>*/}
-                {/*            </div>*/}
-                {/*        </li>*/}
-                {/*        <li className="detail-inf__item">*/}
-                {/*            <span className="li__icon"><PhoneAndroidOutlinedIcon/></span>*/}
-                {/*            <div className="li__inf">*/}
-                {/*                <span className="overhead">Phone</span>*/}
-                {/*                <span className="phone text-overflow"*/}
-                {/*                      title="+375 (29) 601-15-65"*/}
-                {/*                >+375 (29) 601-15-65</span>*/}
-                {/*            </div>*/}
-                {/*        </li>*/}
-                {/*        <li className="detail-inf__item">*/}
-                {/*            <span className="li__icon"><CakeOutlinedIcon/></span>*/}
-                {/*            <div className="li__inf">*/}
-                {/*                <span className="overhead">Birthday</span>*/}
-                {/*                <span className="birthday text-overflow"*/}
-                {/*                      title="March 23, 1999"*/}
-                {/*                >March 23, 1999</span>*/}
-                {/*            </div>*/}
-                {/*        </li>*/}
-                {/*        <li className="detail-inf__item">*/}
-                {/*            <span className="li__icon"><LocationOnOutlinedIcon/></span>*/}
-                {/*            <div className="li__inf">*/}
-                {/*                <span className="overhead">Location</span>*/}
-                {/*                <span className="email-link text-overflow"*/}
-                {/*                      title="Grodno, Belarus"*/}
-                {/*                >Grodno, Belarus</span>*/}
-                {/*            </div>*/}
-                {/*        </li>*/}
-                {/*    </ul>*/}
-                {/*</div>*/}
-                {/*<div className="social">*/}
-                {/*    <a className="social-link" href="https://instagram.com/niki.tusik?igshid=NzNkNDdiOGI=">*/}
-                {/*        <img src={imgInsta} alt="Instagram"/>*/}
-                {/*    </a>*/}
-                {/*    <a className="social-link" href="https://www.linkedin.com/in/nikita-danilov-8a31a8184/">*/}
-                {/*        <img src={imgLinkedIn} alt="LinkedIn"/>*/}
-                {/*    </a>*/}
-                {/*    <a className="social-link" href="https://github.com/NikiDan">*/}
-                {/*        <img src={imgGit} alt="GitHub"/>*/}
-                {/*    </a>*/}
-                {/*</div>*/}
             </div>
         </div>
     );
