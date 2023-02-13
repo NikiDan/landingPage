@@ -1,9 +1,7 @@
 import React from 'react';
 
 import InfBlockPc from "../InfBlock/InfBlockPc";
-import InfBlockMobile from "../InfBlock/InfBlockMobile";
 import ContentPc from "../ContentPage/ContentPc";
-import ContentMobile from "../ContentPage/ContentMobile";
 
 import './style.css';
 
@@ -31,22 +29,12 @@ import './style.css';
 
 const App = () => {
 
-    const pcMinWidth = 1262;
-    const pcWidth = window.innerWidth;
-
     return (
         <div className="App">
-            {pcWidth >= pcMinWidth ?
-                <div className="pcVersion">
-                    <InfBlockPc/>
-                    <ContentPc/>
-                </div>
-                :
-                <div className="mobileVersion">
-                    <InfBlockMobile/>
-                    <ContentMobile/>
-                </div>
-            }
+            <div className="appComponents">
+                <InfBlockPc/>
+                <ContentPc/>
+            </div>
         </div>
     );
 }

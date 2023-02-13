@@ -69,3 +69,16 @@
 #todo, #soon3, #soon6 {
     margin-right: 0;
 }
+
+@media screen and (max-width: 1262px) {
+    .portfolio__content__main {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio__header__text {
+        margin-top: 50px;
+        bottom: 0;
+    }
+}
